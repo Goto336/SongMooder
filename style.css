@@ -1,4 +1,55 @@
+body {
+    background-image: url("http://hdwpro.com/wp-content/uploads/2017/12/Animated-Cool-Background.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 100%;
+            background-attachment: fixed;
+}
+
 h1{
     display:flex;
     justify-content:center;
+    -webkit-animation: rainbow 5s infinite;   
+    font-size: 50px;
 }
+
+#main{
+    height: 450px;
+    width: 800px;
+    background-color: white;
+    opacity: 0.7;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: ridge 6px red;
+}
+
+.options{
+    height: 40px;
+    border-radius: 5px;
+    border: groove 4px red;
+    background-color: white;
+    font-size: 20px;
+}
+#search-term{
+    display:flex;
+    justify-content:center;
+}
+#search-button{
+    border: groove 4px red;
+    border-radius:10px;
+    background-color: lightblue;
+}
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
