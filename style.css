@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
 body {
-    background-image: url("http://hdwpro.com/wp-content/uploads/2017/12/Animated-Cool-Background.jpg");
+    background: url("http://hdwpro.com/wp-content/uploads/2017/12/Animated-Cool-Background.jpg");
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: 100%;
@@ -14,8 +16,10 @@ h1{
 }
 
 #main{
-    display: flex;
-    justify-content: space-between;
+     display: block;
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
 }
 
 .options{
@@ -39,9 +43,19 @@ h1{
     justify-content: center;
      -webkit-animation: rainbow 5s infinite;   
 }
+.duration{
+    font-size: 25px;
+    color:white;
+    text-align: center;
+}
 .container--results{
-    display: flex;
-    justify-content: center;
+    display:block;
+    margin: 0 auto;
+    width: 900px;
+     -webkit-animation: rainbow 5s infinite;   
+    font-size: 35px;
+    font-family: 'Arvo', serif;
+    text-align: center;
 }
 @-webkit-keyframes rainbow{
   0%{color: orange;}	

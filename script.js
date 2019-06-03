@@ -16,12 +16,14 @@ $("#search-button").click(function(){
         method: "GET",
         success: function(response) {
             console.log(response);
+                $(".container--results").html(''); 
+        
+            var title = response[0].title;
+            var  duration = response[0].duration;
+           duration = duration/60000;
+            var minute = duration.toFixed(1);
+            $(".container--results").html("<p>" + title + "</p>"+ "<p class='duration'>Duration: " +  minute + "</p>");
             
-            $(".container--results").html('');
-            
-            var title = response[0].title
-            
-            $(".container--results").html(title);
             
         }
     }); 
@@ -34,7 +36,12 @@ $("#search-button").click(function(){
 
 
 
-//$("select.options").change(function(){
-//    var change = $(this).children("option:selected").val();
-//     $("#main").css("background-color","black");
-//});
+function theme(){
+    var x = document.getElementById("options").value;
+    if(x == "dark") { 
+         $("body").css({"background" : "url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/93/55/6257e6764c4417d.jpg)","background-repeat": "no-repeat", "background-position": "50% 50%", "background-size": "100%", "background-attachment": "fixed"}); 
+    }else{
+        document.querySelector("body").style.background = "url('http://hdwpro.com/wp-content/uploads/2017/12/Animated-Cool-Background.jpg')";
+    }
+ // document.getElementById("demo").innerHTML = "You selected: " + x;
+}
