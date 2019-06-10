@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pridi&display=swap');
 
 body {
     background: url("http://hdwpro.com/wp-content/uploads/2017/12/Animated-Cool-Background.jpg");
@@ -12,7 +13,8 @@ h1{
     display:flex;
     justify-content:center;
     -webkit-animation: rainbow 5s infinite;   
-    font-size: 50px;
+    font-size: 60px;
+    font-family: 'Pridi', serif;
 }
 
 #main{
@@ -56,6 +58,14 @@ h1{
     font-size: 35px;
     font-family: 'Arvo', serif;
     text-align: center;
+}
+#options{
+    float: left; 
+    height: 30px;
+    border-radius: 5px;
+    border: solid red 3px;
+    background-color: white;
+    font-size: 20px;
 }
 @-webkit-keyframes rainbow{
   0%{color: orange;}	
